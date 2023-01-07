@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap');
+
+.conteiner{
+    width: 414px;
+    height: 1500px;
+    background-color: #E5E5E5;
+}
+header{
+    width: 100%;
+    height: 92px;
+    background-color: rgba(207, 43, 43, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Righteous, sans-serif;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+    position: fixed;
+    top:0;
+    left: 0;
+}
+main{
+    position:relative;
+    top:123px;
+}
+
+h1, p{
+    color:rgba(255, 255, 255, 1);
+    padding-left: 21px;
+}
+h1{
+    font-size: 44px;
+}
+p{
+    font-family: Roboto, sans-serif;
+    font-size:18px;
+}
+
+h2{
+    color:rgba(51, 51, 51, 1);
+    font-size:26px;
+    font-family: Righteous, sans-serif;
+    padding-left: 19px;
+    margin-bottom: 17px;
+}
+.comida{
+    height: 216px;
+    width: 100%;
+    padding-left: 19px;
+}
