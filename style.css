@@ -7,7 +7,7 @@
     background-color: #E5E5E5;
 }
 header{
-    width: 100%;
+    width: 414px;
     height: 92px;
     background-color: rgba(207, 43, 43, 1);
     display: flex;
@@ -19,10 +19,12 @@ header{
     position: fixed;
     top:0;
     left: 0;
+    z-index: 10;
 }
 main{
     position:relative;
     top:123px;
+    width: 100%;
 }
 
 h1, p{
@@ -40,12 +42,51 @@ p{
 h2{
     color:rgba(51, 51, 51, 1);
     font-size:26px;
+    font-weight: 400;
     font-family: Righteous, sans-serif;
     padding-left: 19px;
     margin-bottom: 17px;
 }
+h3{
+    color:rgba(51, 51, 51, 1);
+    font-size:16px;
+    font-weight: 700;
+    font-family: Roboto, sans-serif;
+    padding: 8px 0px 0px 15px;
+}
+.descricao{
+    color:rgba(166, 166, 166, 1);
+    font-size:15px;
+    font-weight: 300;
+    font-family: Roboto, sans-serif;
+    padding: 10px 0px 0px 14px;
+}
+.preco{
+    color:rgba(0, 0, 0, 1);
+    font-size:15px;
+    font-weight: 400;
+    font-family: Roboto, sans-serif;
+    padding: 10px 0px 0px 14px;
+}
 .comida{
     height: 216px;
-    width: 100%;
+    width: 395px;
     padding-left: 19px;
+    display: flex;
+    overflow-x: hidden;
+ 
+}
+
+.prato{
+    height: 100%;
+    width: 172px;
+    border-radius:9px;
+    background-color: rgba(255, 255, 255, 1);
+    margin-right: 19px;;
+}
+.imagem{
+    height: 87px;
+    width: 144px;
+    margin:18px 14px 0px 14px;
+    border-radius: 4px;
 }
