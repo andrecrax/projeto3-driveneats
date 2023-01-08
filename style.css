@@ -1,10 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap');
 
+body::-webkit-scrollbar{display:none;}
+body{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr minmax(414px, 1fr) 1fr;
+    background-color: #E5E5E5;
+
+}
+
 .conteiner{
     width: 414px;
     height: 1118px;
     background-color: #E5E5E5;
+    justify-content: center;
 }
 header{
     width: 414px;
@@ -128,11 +138,7 @@ button:disabled{
     background-color: #32b72f;
     font-size: 700;
 }
-body{
-    display: grid;
-    grid-template-columns: 1fr minmax(414px, 1fr) 1fr;
-    background-color: #E5E5E5;
-}
+
 .check {
     display: none;
     width: 15px;
