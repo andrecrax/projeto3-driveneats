@@ -1,6 +1,6 @@
 function mealSelector(elemento){
     const oldBottom = document.querySelector('.meal .selecionado');
-    if(oldBottom !== null){
+     if(oldBottom !== null){
         oldBottom.classList.remove("selecionado");      
     }
     elemento.classList.add("selecionado");
@@ -28,8 +28,8 @@ function finishOrder(){
     const selectedElements = document.querySelectorAll('.selecionado');
     const button = document.querySelector('.finalizar');
     if (selectedElements.length === 3) {
-      button.classList.add("teste");
+      button.disabled = false;
+      button.classList.add("fechar");
       button.innerHTML = "Fechar pedido";
     }
   }
-  
