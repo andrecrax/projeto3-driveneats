@@ -80,7 +80,7 @@ precoBebida = precoBebida.replace(",",".");
 
 precoFinal = parseFloat(precoBebida) + parseFloat(precoComida) + parseFloat(precoSobremesa);
 
-    var text = encodeURIComponent("Olá, gostaria de fazer o pedido:\n- Prato: "+ comida + "\n- Bebida: " + bebida + "\n- Sobremesa: " + sobremesa + "\nTotal: R$ " + precoFinal);
+    var text = encodeURIComponent("Olá, gostaria de fazer o pedido:\n- Prato: "+ comida + "\n- Bebida: " + bebida + "\n- Sobremesa: " + sobremesa + "\nTotal: R$ " + precoFinal.toFixed(2));
     var url = "https://wa.me/1234567890?text=" + text;
     window.open(url, "_blank");
   }
