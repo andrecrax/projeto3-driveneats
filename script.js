@@ -33,3 +33,8 @@ function finishOrder(){
       button.innerHTML = "Fechar pedido";
     }
   }
+  function sendWhatsAppMessage() {
+    var text = encodeURIComponent("Olá, gostaria de fazer o pedido:    - Prato: Frango Yin Yang    - Bebida: Coquinha Gelada    - Sobremesa: Pudim    Total: R$ 27,70");
+    var url = "https://wa.me/1234567890?text=" + text;
+    window.open(url, "_blank");
+  }
