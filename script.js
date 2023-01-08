@@ -36,47 +36,19 @@ function finishOrder(){
   function sendWhatsAppMessage() {
     var comida = document.querySelector(".meal .selecionado h3").textContent;
     var texto = document.querySelector(".meal .selecionado h4").innerHTML;
-var precoComida = "";
 
-for (var i = 0; i < texto.length; i++) {
-    if (/[\d,]/.test(texto[i])) {
-    if (texto[i] === "," || (texto[i] === "." && texto[i-1] !== ",")) {
-        precoComida += ",";
-      } else {
-        precoComida += texto[i];
-      }
-    }
-}
+    precoComida = texto.replace("R$ ","");
+    precoComida = precoComida.replace(",", ".");
 
     var bebida = document.querySelector(".drinks .selecionado h3").textContent;
     var texto = document.querySelector(".drinks .selecionado h4").innerHTML;
-    var precoBebida = "";
-    
-    for (var i = 0; i < texto.length; i++) {
-        if (/[\d,]/.test(texto[i])) {
-        if (texto[i] === "," || (texto[i] === "." && texto[i-1] !== ",")) {
-            precoBebida += ",";
-          } else {
-            precoBebida += texto[i];
-          }
-        }
-    }
+    precoBebida = texto.replace("R$ ","");
+    precoBebida = precoBebida.replace(",", ".");
+ 
     var sobremesa = document.querySelector(".dessert .selecionado h3").textContent;
-    var texto = document.querySelector(".dessert .selecionado h4").innerHTML;
-var precoSobremesa = "";
-
-for (var i = 0; i < texto.length; i++) {
-    if (/[\d,]/.test(texto[i])) {
-    if (texto[i] === "," || (texto[i] === "." && texto[i-1] !== ",")) {
-        precoSobremesa += ",";
-      } else {
-        precoSobremesa += texto[i];
-      }
-    }
-}
-precoSobremesa = precoSobremesa.replace(",",".");
-precoComida = precoComida.replace(",",".");
-precoBebida = precoBebida.replace(",",".");
+    var sobremesa = document.querySelector(".dessert .selecionado h4").innerHTML;
+    precoSobremesa = sobremesa.replace("R$ ","");
+    precoSobremesa = precoSobremesa.replace(",", ".");
 
 precoFinal = parseFloat(precoBebida) + parseFloat(precoComida) + parseFloat(precoSobremesa);
 
