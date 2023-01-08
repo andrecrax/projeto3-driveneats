@@ -17,73 +17,80 @@
         <section class="meal">
             <h2>Primeiro, seu prato</h2>
             <div class="comida disable-scrollbars" >
-              <div onclick="mealSelector(this)" class="prato">
-                <img class="imagem" src="/img/lamen.png">
+              <div data-test="dish" onclick="mealSelector(this)" class="prato">
+                <img class="imagem" src="/img/lamen.png" alt="Uma tigela de lamen">
                 <h3>Ramen</h3>
                 <p class="descricao">Melhor que miojo, melhor que cup-noddle</p>
-                <h4 class="preco">R$ 9,99</h4>
+                <h4 data-test="item-price" class="preco">R$ 3,99</h4>
               </div>
-              <div onclick="mealSelector(this)" class="prato">
-                <img class="imagem" src="/img/lamen.png">
-                <h3>Ramen</h3>
-                <p class="descricao">Melhor que miojo, melhor que cup-noddle</p>
-                <h4 class="preco">R$ 9,99</h4>
+              <div data-test="dish" onclick="mealSelector(this)" class="prato">
+                <img class="imagem" src="/img/ovos.jpg" alt="Ovos e bancon">
+                <h3>Ovos com bancon</h3>
+                <p class="descricao">Café da manhã para apressados</p>
+                <h4 data-test="item-price" class="preco">R$ 6,50</h4>
               </div>
-              <div onclick="mealSelector(this)" class="prato">
-                <img class="imagem" src="/img/lamen.png">
-                <h3>Ramen</h3>
-                <p class="descricao">Melhor que miojo, melhor que cup-noddle</p>
-                <h4 class="preco">R$ 9,99</h4>
+              <div data-test="dish" onclick="mealSelector(this)" class="prato">
+                <img class="imagem" src="/img/bentou.jpg" alt="Bentou">
+                <h3>Bentou</h3>
+                <p class="descricao">Uma marmita perfeita para estudantes</p>
+                <h4 data-test="item-price" class="preco">R$ 7,99</h4>
+              </div>
+              <div data-test="dish" onclick="mealSelector(this)" class="prato">
+                <img class="imagem" src="/img/camarao.jpg" alt="Camarão">
+                <h3>Camarão</h3>
+                <p class="descricao">Camarão, salmão e limão. Tudo muito ão!</p>
+                <h4 data-test="item-price" class="preco">R$ 25,99</h4>
               </div>
             </div>
         </section>
         <section class="drinks">
           <h2>Agora, sua bebida</h2>
           <div class="comida disable-scrollbars">
-            <div onclick="drinkSelector(this)" class="prato">
+            <div data-test="drink" onclick="drinkSelector(this)" class="prato">
               <img class="imagem" src="/img/cafe.jpeg">
               <h3>Café</h3>
               <p class="descricao">Traguinho de café, muito melhor que Coca-Cola</p>
-              <h4 class="preco">R$ 2,42</h4>
+              <h4 data-test="item-price" class="preco">R$ 2,42</h4>
             </div>
-            <div onclick="drinkSelector(this)" class="prato">
-              <img class="imagem" src="/img/cafe.jpeg">
-              <h3>Café</h3>
-              <p class="descricao">Traguinho de café, muito melhor que Coca-Cola</p>
-              <h4 class="preco">R$ 2,42</h4>
+            <div data-test="drink" onclick="drinkSelector(this)" class="prato">
+              <img class="imagem" src="/img/cha.jpg">
+              <h3>Chá</h3>
+              <p class="descricao">Para ingleses ou para quem não gosta de café</p>
+              <h4 data-test="item-price" class="preco">R$ 4,11</h4>
             </div>
-            <div onclick="drinkSelector(this)" class="prato">
-              <img class="imagem" src="/img/cafe.jpeg">
-              <h3>Café</h3>
-              <p class="descricao">Traguinho de café, muito melhor que Coca-Cola</p>
-              <h4 class="preco">R$ 2,42</h4>
+            <div data-test="drink" onclick="drinkSelector(this)" class="prato">
+              <img class="imagem" src="/img/starbuck.jpg">
+              <h3>Starbuck</h3>
+              <p class="descricao">Perfeito para frescos e adolescentes</p>
+              <h4 data-test="item-price" class="preco">R$ 99,50</h4>
             </div>
           </div>
       </section>
       <section class="dessert">
         <h2>Por fim, sua sobremesa</h2>
         <div class="comida disable-scrollbars">
-          <div onclick="dessertSelector(this)" class="prato">
-            <img class="imagem" src="/img/sobremesa.jpg">
-            <h3>Panna Cotta</h3>
-            <p class="descricao">Várias pessoas deram sua vida para trazer para ti</p>
-            <h4 class="preco">R$ 1,99</h4>
+          <div data-test="dessert" onclick="dessertSelector(this)" class="prato">
+            <img class="imagem" src="/img/bolo.jpg" alt="sobremesa">
+            <h3>Bolo</h3>
+            <p class="descricao">Um sabor de rosa completamente original</p>
+            <h4 data-test="item-price" class="preco">R$ 0,99</h4>
           </div>
-          <div onclick="dessertSelector(this)" class="prato">
-            <img class="imagem" src="/img/sobremesa.jpg">
-            <h3>Panna Cotta</h3>
-            <p class="descricao">Várias pessoas deram sua vida para trazer para ti</p>
-            <h4 class="preco">R$ 1,99</h4>
+          <div data-test="dessert" onclick="dessertSelector(this)" class="prato">
+            <img class="imagem" src="/img/sorvete.jpg" alt="Sorvete">
+            <h3>Sorvete</h3>
+            <p class="descricao">O melhor para dias de verão</p>
+            <h4 data-test="item-price" class="preco">R$ 1,99</h4>
           </div>
-          <div onclick="dessertSelector(this)" class="prato">
-            <img class="imagem" src="/img/sobremesa.jpg">
-            <h3>Panna Cotta</h3>
-            <p class="descricao">Várias pessoas deram sua vida para trazer para ti</p>
-            <h4 class="preco">R$ 1,99</h4>
+          <div data-test="dessert" onclick="dessertSelector(this)" class="prato" alt="doce">
+            <img class="imagem" src="/img/sweet.jpg">
+            <h3>Docinho</h3>
+            <p class="descricao">Um punhado de bala pra deixar no bolso</p>
+            <h4 data-test="item-price" class="preco">R$ 1,99</h4>
+          
           </div>
         </div>
     </section>
-    <div class="pedido">
+    <div data-test="order-btn" class="pedido">
       <button id="button" disabled class="finalizar">
         Selecione os 3 itens para fechar o pedido
       </button>
