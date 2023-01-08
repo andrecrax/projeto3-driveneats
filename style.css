@@ -3,7 +3,7 @@
 
 .conteiner{
     width: 414px;
-    height: 1500px;
+    height: 1118px;
     background-color: #E5E5E5;
 }
 header{
@@ -74,8 +74,8 @@ h3{
     padding-left: 19px;
     padding-bottom: 30px;
     display: flex;
-    overflow-x: hidden;
- 
+    overflow-x: auto;
+    scrollbar-width:none;
 }
 
 .prato{
@@ -90,4 +90,24 @@ h3{
     width: 144px;
     margin:18px 14px 0px 14px;
     border-radius: 4px;
+}
+.pedido{
+    height: 92px;
+    width: 414px;
+    display: grid;
+    place-items: center;
+    background-color: rgba(255, 255, 255, 1);
+    bottom: 0;
+    position: fixed;
+}
+button{
+    background-color: rgba(203, 203, 203, 1);
+    border-color: rgba(203, 203, 203, 1);
+    outline: none;
+    height: 61px;
+    width: 364px;
+    font-size: 20px;
+    font-family: Roboto, sans-serif;
+    color:rgba(255, 255, 255, 1);
+    border-radius: 50px;
 }
