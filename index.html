@@ -14,22 +14,22 @@
             <p>Sua comida em 6 minutos</p>
         </header>
     <main>
-        <section>
+        <section class="meal divs">
             <h2>Primeiro, seu prato</h2>
-            <div class="comida disable-scrollbars">
-              <div class="prato">
+            <div class="comida disable-scrollbars" >
+              <div onclick="mealSelector(this)" class="prato">
                 <img class="imagem" src="/img/lamen.png">
                 <h3>Ramen</h3>
                 <p class="descricao">Melhor que miojo, melhor que cup-noddle</p>
                 <h4 class="preco">R$ 9,99</h4>
               </div>
-              <div class="prato">
+              <div onclick="mealSelector(this)" class="prato">
                 <img class="imagem" src="/img/lamen.png">
                 <h3>Ramen</h3>
                 <p class="descricao">Melhor que miojo, melhor que cup-noddle</p>
                 <h4 class="preco">R$ 9,99</h4>
               </div>
-              <div class="prato">
+              <div onclick="mealSelector(this)" class="prato">
                 <img class="imagem" src="/img/lamen.png">
                 <h3>Ramen</h3>
                 <p class="descricao">Melhor que miojo, melhor que cup-noddle</p>
@@ -37,22 +37,22 @@
               </div>
             </div>
         </section>
-        <section>
+        <section class="drinks divs">
           <h2>Agora, sua bebida</h2>
           <div class="comida disable-scrollbars">
-            <div class="prato">
+            <div onclick="drinkSelector(this)" class="prato">
               <img class="imagem" src="/img/cafe.jpeg">
               <h3>Café</h3>
               <p class="descricao">Traguinho de café, muito melhor que Coca-Cola</p>
               <h4 class="preco">R$ 2,42</h4>
             </div>
-            <div class="prato">
+            <div onclick="drinkSelector(this)" class="prato">
               <img class="imagem" src="/img/cafe.jpeg"">
               <h3>Café</h3>
               <p class="descricao">Traguinho de café, muito melhor que Coca-Cola</p>
               <h4 class="preco">R$ 2,42</h4>
             </div>
-            <div class="prato">
+            <div onclick="drinkSelector(this)" class="prato">
               <img class="imagem" src="/img/cafe.jpeg"">
               <h3>Café</h3>
               <p class="descricao">Traguinho de café, muito melhor que Coca-Cola</p>
@@ -60,22 +60,22 @@
             </div>
           </div>
       </section>
-      <section>
+      <section class="dessert divs">
         <h2>Por fim, sua sobremesa</h2>
         <div class="comida disable-scrollbars">
-          <div class="prato">
+          <div onclick="dessertSelector(this)" class="prato">
             <img class="imagem" src="/img/sobremesa.jpg">
             <h3>Panna Cotta</h3>
             <p class="descricao">Várias pessoas deram sua vida para trazer para ti</p>
             <h4 class="preco">R$ 1,99</h4>
           </div>
-          <div class="prato">
+          <div onclick="dessertSelector(this)" class="prato">
             <img class="imagem" src="/img/sobremesa.jpg">
             <h3>Panna Cotta</h3>
             <p class="descricao">Várias pessoas deram sua vida para trazer para ti</p>
             <h4 class="preco">R$ 1,99</h4>
           </div>
-          <div class="prato">
+          <div onclick="dessertSelector(this)" class="prato">
             <img class="imagem" src="/img/sobremesa.jpg">
             <h3>Panna Cotta</h3>
             <p class="descricao">Várias pessoas deram sua vida para trazer para ti</p>
@@ -84,12 +84,12 @@
         </div>
     </section>
     <div class="pedido">
-      <button>
+      <button class="finalizar">
         Selecione os 3 itens para fechar o pedido
       </button>
     </div>
 </main>
-
 </div>
+<script src="script.js"></script>
   </body>
 </html>

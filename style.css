@@ -111,3 +111,11 @@ button{
     color:rgba(255, 255, 255, 1);
     border-radius: 50px;
 }
+.selecionado{
+    box-shadow: inset 0px 0px 0px 5px#32b72f;
+}
+
+.teste{
+    background-color: #32b72f;
+    font-size: 700;
+}
