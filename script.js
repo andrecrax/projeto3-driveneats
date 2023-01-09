@@ -46,8 +46,8 @@ function finishOrder(){
     precoBebida = precoBebida.replace(",", ".");
  
     var sobremesa = document.querySelector(".dessert .selecionado h3").textContent;
-    var sobremesa = document.querySelector(".dessert .selecionado h4").innerHTML;
-    precoSobremesa = sobremesa.replace("R$ ","");
+    var texto = document.querySelector(".dessert .selecionado h4").innerHTML;
+    precoSobremesa = texto.replace("R$ ","");
     precoSobremesa = precoSobremesa.replace(",", ".");
 
 precoFinal = parseFloat(precoBebida) + parseFloat(precoComida) + parseFloat(precoSobremesa);
