@@ -4,6 +4,9 @@
 # :bow_and_arrow: Objetivos
 Implementar um site mobile do DrivenEats, um restaurante que trabalha com um combo de Comida + Bebida + Sobremesa. O site permite a escolha dos itens, enviando as informações por Whatsapp diretamente para o restaurante. 
 
+# :link: Acesse aqui
+https://projeto3-driveneats-jftym2w3v-andrecrax.vercel.app/
+
 # :white_check_mark: Requisitos<br>
   :small_blue_diamond: Aplicar layout para mobile, seguindo o Figma fornecido.<br>
   :small_blue_diamond: O topo e o botão de fechar pedido devem ter posicionamento fixo e não rolar com a barra de rolagem.<br>
